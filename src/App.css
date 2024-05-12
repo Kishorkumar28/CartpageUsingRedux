@@ -1,23 +1,33 @@
+html {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: #f8f9fa; /* Light gray background */
+  background-image: linear-gradient(to bottom, #afd4f9, #e9ecef); /* Gradient for subtle depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
 .parent{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color:rgb(0, 0, 0);
-  font-family:Arial, Helvetica, sans-serif;
   border-bottom: 5px solid #000000;
   width:100%;
   
 
 }
 .product-list{
- display:flex;
- align-items: center;
- justify-content: center;
-  background-color: rgb(175, 175, 175);
-  height:20vh;
-  width:207vh !important;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:10vh;
+  width:60vh;
+ border: 3px solid rgb(255, 255, 255);
+ border-radius: 15px;
+ background-color: rgb(0, 0, 0);
+ color:white;
 }
 
 .products{
@@ -25,7 +35,7 @@
   width:100% !important;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;;
   
 
   h3{
@@ -56,9 +66,10 @@
 
 select{
   height:35px;
-  width: 70px;
+  width: 40px;
   border-radius: 10px;
   margin-bottom: 15vh;
+  font-size: large;
   
 }
 
@@ -71,14 +82,28 @@ select{
 }
 
 .product-item {
-  margin-top: 6vh;
+  margin-top: 1vh;
   border-bottom: 5px solid #000000; /* Add a 1px solid border at the bottom of each product item */
-  padding-bottom: 10px; /* Optional: Add some padding at the bottom of each product item */
-  margin-bottom: 20px; /* Optional: Add margin at the bottom of each product item */
+  /* Optional: Add margin at the bottom of each product item */
   display:flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  height: 10 vh;
+  width: 100vh;
+  transition: transform 0.3s ease;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 13px;
+  padding-bottom: 10px; /* Optional: Add some padding at the bottom of each product item */
+  margin-bottom: 20px; 
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.281); /* Add subtle box shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+.product-item:hover {
+  transform: scale(1.05); /* Zoom in by 5% when hovered */
+  box-shadow: 0 4px 50px 1px rgb(255, 255, 255); /* Enhance box shadow on hover */
 }
 h1{
   font-size: 3.2em;
@@ -90,7 +115,7 @@ h1{
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  width:190vh;
+  width:100vh;
   margin-bottom: 10vh;
   font-size: 20px;
   

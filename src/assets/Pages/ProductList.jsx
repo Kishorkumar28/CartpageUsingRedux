@@ -46,20 +46,20 @@ const ProductList = () => {
   return (
     
     <div className="products">
-      <h1 className="product-list">Cart</h1>
+      <h1 className="product-list">Cart Page</h1>
       <ul className="" style={{ listStyleType: 'none' }}>
         {products.map(product => (
           <li key={product.id} className="product-item">
             <div className='details'>
             <img className='images' src={product.thumbnail} alt={product.title} />
             <h3>{product.title}</h3>
-            <p>Description: {product.description}</p>
-            
+            {/* <p>Description: {product.description}</p>
+            <p>Brand: {product.brand}</p>
             <p>Rating: {product.rating}</p>
             <p>Stock: {product.stock}</p>
-            <p>Brand: {product.brand}</p>
+            
             <p>Category: {product.category}</p>
-            <p>Discount: {product.discountPercentage}%</p>
+            <p>Discount: {product.discountPercentage}%</p> */}
             </div>
             <div className='order'>
 
